@@ -29,24 +29,24 @@ Users should be able to:
 
 # Mobile Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/FAQ-accordion-card/blob/main/Mobile%20preview.PNG)
 
 # Mobile Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/FAQ-accordion-card/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/FAQ-accordion-card/blob/main/Desktop%20preview.PNG)
 
 # Mobile Preview - active 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/FAQ-accordion-card/blob/main/Desktop%20preview%20-%20active.PNG)
 
 ### Links
 
- - Source code: []()
- - Live website: []()
+ - Source code: [https://github.com/romila2003/FAQ-accordion-card](https://github.com/romila2003/FAQ-accordion-card)
+ - Live website: [https://faq-accordian-card-solution.netlify.app/](https://faq-accordian-card-solution.netlify.app/)
 
 ## My process
 
