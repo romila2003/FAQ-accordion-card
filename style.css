@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
