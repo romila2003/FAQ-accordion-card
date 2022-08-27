@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --very-dark-saturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --gradient: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(237, 12%, 33%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    border-radius: 23px;
+    width: 500px;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159)
+}
+
+.woman {
+    position: absolute;
+    top:  -135px;
+    margin-left: 17%;
+    width: 240px;
+    aspect-ratio: 1/1;
+    overflow: visible;
+}
+
+.woman-desktop {
+    display: none;
+}
+
+.underlay-img {
+    position: absolute;
+    top: 0px;
+    margin-left: 17%;
+}
+
+.underlay-img-desktop {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    color: var(--very-dark-saturated-blue);
+}
+
+.faq {
+    position: relative;
+}
+
+.faq-container {
+    padding: 100px 40px 50px 40px;
+}
+
+.faq-title {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.faq-title:hover {
+    color: var(--soft-red);
+}
+
+.faq-text {
+    display: none;
+    font-size: 0.8em;
+}
+
+section {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.arrow-down {
+    cursor: pointer;  
+}
+
+.faq.active .woman {
+    margin-top: 10px;
+}
+
+.faq.active .faq-title {
+    font-weight: 700;
+    color: var(--very-dark-saturated-blue);
+}
+
+.faq.active .faq-text {
+    display: block;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 15px;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: -10px;
+    padding-left: 1em;
+}
+
+.faq.active .arrow-down {
+    transform: rotate(180deg);
+}
+
+.box {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px; 
+    text-align: center;
+    color: var(--light-grayish-blue);
+    font-weight: bold;
+}
+
+.attribution a {
+    color: var(--very-dark-saturated-blue);
+}
+
+.attribution a:hover { 
+    color: var(--soft-red); 
+}
+
+@media screen and (min-width: 450px) {
+    .woman {
+        margin-left: 25%;
+    }
+
+    .underlay-img {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    body {
+        padding: 0 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 920px;
+        overflow: visible;
+    }
+
+    .woman {
+        display: none;
+    }
+
+    .underlay-img {
+        display: none;
+    }
+
+    .woman-desktop {
+        overflow: hidden;
+        display: block;
+        width: 472px;
+        position: absolute;
+        left: -100px;
+        bottom: 50px;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);
+    }
+
+    h1 {
+        padding-bottom: 1em;
+        text-align: left;
+    }
+
+    .underlay-img-desktop {
+        overflow: hidden;
+        display: block;
+        width: 472px;
+        position: absolute;
+        left: -120px;
+        bottom: -30px;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);
+    }
+
+    .faq-container {
+        padding: 50px 40px;
+        grid-area: 2 / 2;
+    }
+
+    .box {
+        display: block;
+        position: absolute;
+        bottom: 70px;
+        left: -100px;
+        animation: upDown 2s linear infinite;
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
