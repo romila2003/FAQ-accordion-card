@@ -131,23 +131,6 @@ section {
     display: none;
 }
 
-footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 12px; 
-    text-align: center;
-    color: var(--light-grayish-blue);
-    font-weight: bold;
-}
-
-.attribution a {
-    color: var(--very-dark-saturated-blue);
-}
-
-.attribution a:hover { 
-    color: var(--soft-red); 
-}
-
 @media screen and (min-width: 450px) {
     .woman {
         margin-left: 25%;
