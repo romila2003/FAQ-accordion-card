@@ -112,6 +112,11 @@ section {
     padding-bottom: 15px;
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 .faq-toggle {
     background-color: transparent;
     position: absolute;
